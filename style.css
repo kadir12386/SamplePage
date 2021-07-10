@@ -108,8 +108,8 @@ input {
 	z-index: 1;
 	width: 800px;
 	max-width: 100%;
-	min-height: 550px;
-	/* min-height: 480px; */
+/* 	min-height: 550px; */
+	min-height: 480px;
 }
 
 .form-container {
