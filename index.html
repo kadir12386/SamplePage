@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+    <style>
+        .circle {
+            width: 300px;
+            height: 300px;
+            /* background-image: linear-gradient(120deg, #0d8373 0, #0af8b5); */
+            background-color: rgb(30, 183, 189);
+            border-radius: 50%;
+            position: absolute;
+            left: -7%;
+            top: -12%;
+        }
+
+        #pentagon {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 104px;
+            box-sizing: content-box;
+            border-width: 200px 108px 0;
+            border-style: solid;
+            border-color: #efc40f transparent;
+            right: -100px;
+            transform: rotate(200deg);
+        }
+
+        #pentagon:before {
+            right: -30px;
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -85px;
+            left: -18px;
+            border-width: 0 255px 305px;
+            border-style: solid;
+            border-color: transparent transparent #e64747de;
+        }
+
+        .download-btn {
+            margin-left: 85%;
+            border-radius: 20px;
+            border: 1px solid #2eb481;
+            background-color: #2eb481;
+            color: #FFFFFF;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 12px 33px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+
+        }
+
+        .download-btn:hover {
+            background-color: #fff;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        .circle2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 0, 136, 0.63);
+            left: -20px;
+            margin: 3px 0 0 30px;
+            top: 500px;
+            /* Rotate */
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            /* Rotate Origin */
+            -webkit-transform-origin: 0 100%;
+            -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+            -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+        }
+        .title{
+            color: #15c498;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h2>Weekly Coding Challenge #1: Sign in/up Form</h2> -->
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <button class="download-btn">Download <i class="fas fa-download"></i></button>
+    <section class="section">
+
+
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1 class="title">Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button class="button">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1 class="title">Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button class="button">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost button" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost button" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="circle1" id="pentagon"></div>
+
+    <!-- <footer>
+	<p>
+		Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+		- Read how I created this and how you can join the challenge
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+	</p>
+</footer> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
